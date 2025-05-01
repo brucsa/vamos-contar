@@ -12,19 +12,14 @@
     <header>
         <h1>Vamos Contar</h1>
         <section>
-            <div id="formulario">
-                <label for="inicio">Primeiro Número</label>
-                <input type="number" name="inicio" id="inicio">
+            <div id="dados">
+                <p>Primeiro Número: <input type="number" name="inicio" id="txti"></p>
+                <p>Último Número: <input type="number" name="fim" id="txtf"></p>
+                <p>Passo: <input type="number" name="passo" id="txtp"></p>
 
-                <label for="fim">Último Número</label>
-                <input type="number" name="fim" id="fim">
-
-                <label for="passo">Passo</label>
-                <input type="number" name="passo" id="passo">
-
-                <button>Contar</button>
+                <p><button onclick="contar()">Contar</button></p>
             </div>
-            <div>
+            <div id="res">
                 Preparando contagem...
             </div>
         </section>
