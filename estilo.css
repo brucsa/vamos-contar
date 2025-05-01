@@ -1,56 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-image: url('imagens/fundo-imagem.svg');
-    font: normal 15pt Arial;
+    background-image: url('SVG/fundo-imagem.svg');
+    background-repeat: no-repeat;
+    /* Impede a repetição da imagem */
+    background-size: cover;
+    /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center;
+    /* Centraliza a imagem horizontal e verticalmente */
+    font: normal 1rem Tahoma;
 }
 
 header {
-    color: #000;
+    color: #fff;
     text-align: center;
+    margin: 20px;
+    font-size: 0.8rem;
 }
 
 section {
-    background-color: #fff;
+    color: #ffffff;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
-    height: auto;
+    width: 30%;
     margin: auto;
-    box-shadow: 3px 3px 10px #0000006b;
+    /* Centraliza */
+    text-align: center;
 }
 
 div {
     margin: 10px;
 }
 
-#formulario {
+#dados {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-label {
-    margin-bottom: 5px;
-}
-
 input {
     margin-bottom: 10px;
     padding: 5px;
+    text-align: center;
+    font: normal 1rem Tahoma;
 }
 
 button {
-    background-color: #823e3e;
-    padding: 5px;
+    background-color: #33D6DE;
+    padding: 10px;
+    border-radius: 10px;
     cursor: pointer;
+    color: #1f0030;
+    border: #1f0030 solid 2px;
+
 }
 
 button:hover {
-    background-color: #9c5e5e;
+    background-color: #33d6de6a;
+    border: #33D6DE solid 2px;
+    color: #33D6DE;
 }
 
 footer {
     color: #fff;
     text-align: center;
     margin-top: 10px;
+    font-size: 0.8rem;
 }
 
 footer a {
@@ -60,4 +78,15 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* MOBILE */
+@media(max-width:700px) {
+
+    section {
+        padding: 10px;
+        width: 300px;
+        flex-direction: column;
+        height: 500px;
+    }
 }
